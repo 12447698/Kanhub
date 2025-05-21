@@ -28,5 +28,6 @@ jobs:
           
       - name: Run Django tests for apps
         run: |
+          cd kanhub
           python manage.py migrate --noinput
           python manage.py test apps
